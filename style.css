@@ -13,9 +13,12 @@
     font-style: normal;
   }
 
-  .CodeMirror, .markdown pre code {
+  .CodeMirror {
     font-size: 17px;
     line-height: 1.5;
+    font-family: "Fira Code";
+  }
+  .markdown pre code {
     font-family: "Fira Code";
   }
 }
