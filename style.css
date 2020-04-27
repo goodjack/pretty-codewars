@@ -1,3 +1,15 @@
+/* ==UserStyle==
+@name           Pretty Codewars
+@version        2.0.0
+@namespace      github.com/goodjack/pretty-codewars
+@description    Larger font size, increased line height, and the beautiful Fira Code font.
+@author         goodjack <goodjack@users.noreply.github.com> (https://github.com/goodjack)
+@homepageURL    https://github.com/goodjack/pretty-codewars
+@supportURL     https://github.com/goodjack/pretty-codewars/issues
+@updateURL      https://raw.githubusercontent.com/goodjack/pretty-codewars/master/style.css
+@license        CC-BY-4.0
+==/UserStyle== */
+
 @-moz-document domain("codewars.com") {
   @font-face {
     font-family: "Fira Code";
@@ -13,9 +25,15 @@
     font-style: normal;
   }
 
-  .CodeMirror pre {
+  .CodeMirror pre.CodeMirror-line {
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-family: "Fira Code";
+  }
+
+  .markdown code,
+  pre code,
+  .result-type--log .result-type__value {
     font-family: "Fira Code";
   }
 }
